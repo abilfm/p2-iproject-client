@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <NavBar/>
+    <Footer/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +9,20 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import NavBar from '@/components/NavBar.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  name: 'Home',
+  components: {
+    NavBar,
+    Footer
+  }
+}
+</script>
 
 <style>
 #app {
