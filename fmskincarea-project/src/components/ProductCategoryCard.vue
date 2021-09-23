@@ -1,5 +1,6 @@
 <template>
-  
+  <div class="product-category-card">
+  </div>
 </template>
 
 <script>

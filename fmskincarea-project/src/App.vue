@@ -2,10 +2,7 @@
   <div id="app">
     <NavBar/>
     <Footer/>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <ContactUsPage/>
     <router-view/>
   </div>
 </template>
@@ -14,18 +11,20 @@
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
+import ContactUsPage from '@/views/ContactUsPage.vue'
 
 export default {
   name: 'Home',
   components: {
     NavBar,
-    Footer
+    Footer,
+    ContactUsPage
   }
 }
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,5 +43,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
